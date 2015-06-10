@@ -1,1 +1,9 @@
 .env
+out*
+Gemfile.lock
+wordpress_creds.py
+wordpress_creds.rb
+markers*.js
+irb.log
+*.db
+

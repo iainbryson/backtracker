@@ -1,2 +1,4 @@
-gem 'plist', :github => 'plist/plist', :branch => 'master'
+gem 'pry-rescue'
+gem 'pry'
+gem 'dbscan', :path => '/Users/iainbryson/src/github/dbscan'
 gem 'rubypress'

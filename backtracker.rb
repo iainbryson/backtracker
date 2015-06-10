@@ -5,12 +5,10 @@ require 'net/http'
 require 'tempfile'
 require 'exifr'
 require 'json'
+require 'pp'
+require './wordpress_creds.rb'
 
-wp = Rubypress::Client.new(:host => "www.thecastawaylife.com",
-                           :path => "/blog/xmlrpc.php",
-                           :username => "bryson.iain@gmail.com",
-                           :password => "SwCm271W60IDhvq",
-                           :use_ssl => false)
+wp = Rubypress::Client.new(WPCreds::wordpress_creds)
 
 start = 0
 step = 10
@@ -20,12 +18,14 @@ markers = []
 exif = nil
 
 while true do
-    posts = wp.getPosts( {        :filter => {
-              :post_type => 'post',
-              :orderby => 'post_date',
-              :order => 'asc',
-              :offset => start,
-              :number => step
+    posts = wp.getPosts( {
+              :filter => {
+                  :post_type => 'post',
+                  :post_status => 'publish',
+                  :orderby => 'post_date',
+                  :order => 'asc',
+                  :offset => start,
+                  :number => step
             } } )
 
     start = start + step
@@ -34,14 +34,18 @@ while true do
 
     posts.each do |post|
 
+        pp post
         print "Title: #{post['post_title']}\n"
         print "Link:  #{post['link']}\n"
         print "id:    #{post['post_id']}\n"
         # https://stackoverflow.com/questions/5813446/extract-img-tags-in-ruby
         content = Nokogiri::HTML(post["post_content"])
 
+        post_date = Time.new(post['post_date'].year, post['post_date'].month, post['post_date'].day, post['post_date'].hour, post['post_date'].min)
+
         marker = { :post => post['link'],
                    :title => post['post_title'],
+                   :post_date => post_date,
                    :date_time => nil,
                    :gps => nil
                  }
@@ -133,5 +137,5 @@ while true do
     end
 end
 
-File.open('markers.js', 'w') { |file| file.write("var markers = "+markers.to_json) }
+File.open('markers.js', 'w') { |file| file.write("var markers = "+JSON.pretty_generate(markers) + ";\n") }
 

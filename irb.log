@@ -1,0 +1,23 @@
+require 'exifr'
+EXIFR::JPEG.new(file)
+file = '/Users/iainbryson/Pictures/2014/2014-12-06/IMG_1785.JPG'
+EXIFR::JPEG.new(file)
+file.gps
+file.exif.gps
+EXIFR::JPEG.new(file).exif
+EXIFR::JPEG.new(file).exif.gps
+JSON.pretty_generate(EXIFR::JPEG.new(file).exif.gps)
+require 'json'
+JSON.pretty_generate(EXIFR::JPEG.new(file).exif.gps)
+exif = EXIFR::JPEG.new(file)
+j = {  :gps => {
+                                            :latitude        => exif.exif.gps.latitude,
+                                            :longitude       => exif.exif.gps.longitude,
+                                            :altitude        => exif.exif.gps.altitude,
+                                            :image_direction => exif.exif.gps.image_direction
+                                         } }
+JSON.pretty_generate(j)
+j.to_json
+File.open("irb.log", "w") do |f|
+    f << Readline::HISTORY.to_a.join("\n")
+  end
