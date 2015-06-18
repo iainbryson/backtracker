@@ -133,6 +133,7 @@ function geographicalCenter(points) {
 }*/
 
 // labeled pin
+// http://biostall.com/adding-number-or-letters-to-google-maps-api-markers
 function pinSymbol(color, label) {
     color = color.substr(1,color.length) // remove the leading '#'
     return 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld='+label+'|' + color + '|eeeeee'

@@ -36,6 +36,17 @@ found_gps = 0
 total = 0
 found_created = 0
 
+
+markers.each do |marker|
+    marker["images"].each do |image|
+        if image["gps"] then
+            marker["gps"] = image["gps"]
+            break
+        end
+    end
+end
+
+posts_with_gps_count = {before: markers.select{|x| x['gps']}.length, after: 0}
 #Pry.rescue do
 
 begin
@@ -177,16 +188,25 @@ end
 
 #end # rescue
 
-p "Already had GPS #{already_had_gps}"
-p "Found create date: #{found_by_create_date}"
-p "Found by MarsEdit map: #{found_by_marsedit_map}"
-p "Found by name and size: #{found_by_name_and_size}"
-p "Found by perceptual hash #{found_by_perceptual_hash}"
-p "GPS: already had it: #{already_had_gps} found it locally: #{found_gps} didn't find it: #{total - found_gps - already_had_gps}"
-
+posts_with_gps_count[:after] = markers.select{|x| x['gps']}.length
 markers_no_gps = (markers.select{|d| !d["gps"]})
 
-print "Markers without GPS: #{markers_no_gps.length}\n"
+
+puts "Images already having GPS #{already_had_gps}\n"
+puts "Images found by create date: #{found_by_create_date}\n"
+puts "Images found by MarsEdit map: #{found_by_marsedit_map}\n"
+puts "Images found by name and size: #{found_by_name_and_size}\n"
+puts "Images found by perceptual hash #{found_by_perceptual_hash}\n"
+puts "Images having GPS totals:\n"
+puts "\talready had it: #{already_had_gps}\n"
+puts "\tfound it locally: #{found_gps}\n"
+puts "\tdidn't find it: #{total - found_gps - already_had_gps}"
+puts "Posts having GPS totals:\n"
+puts "\talready had it: #{posts_with_gps_count[:before]}\n"
+puts "\tfound it locally: #{posts_with_gps_count[:after]}\n"
+puts "\tfinal count without: #{markers_no_gps.length}\n"
+
+puts "\nList of posts without GPS info:"
 markers_no_gps.each do |m|
     print "\t#{m['post']}\n"
 end
