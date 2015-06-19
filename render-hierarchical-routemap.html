@@ -22,13 +22,8 @@
     }
     </style>
 
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.exp?sensor=false"></script>
     
-    <!--
-<script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?v=3.exp?key=AIzaSyBT6L96hKLQd7Ld9pzbPwR7nUxrRsnySLA&sensor=false">
-    </script>
---> 
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.exp?sensor=false"></script>
 
     <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markermanager/src/markermanager.js"></script>
     
@@ -36,9 +31,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <script type="text/javascript" src="hierarchical_markers.js" />
-    <script type="text/javascript"></script>
-    <script type="text/javascript">
+<script type="text/javascript">
 
 // pretty-print a date
 function formatDate(date) {
@@ -139,7 +132,7 @@ function pinSymbol(color, label) {
     return 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld='+label+'|' + color + '|eeeeee'
 }
 
-function initialize() {
+function initialize(marker_data) {
     "use strict";
 
     var root = marker_data
@@ -150,7 +143,7 @@ function initialize() {
     var long_extent = d3.extent(markers, function(d) { return d.gps.longitude; });
 
     markers.forEach( function(d) { if (d.day) d.day = new Date(d.day); })
-    var marker_dates = markers.map( function(d) { if (d.day) return new Date(d.day); })
+    var marker_dates = markers.map( function(d) { if (d.day) return d.day; })
     var date_extent = d3.extent(marker_dates)
     var time_range = d3.time.scale().domain(date_extent).range([0,1])
 
@@ -333,23 +326,21 @@ function initialize() {
     });  
 }
 
+function onload() {
+    var marker_data = $.ajax({
+        url: 'hierarchical-markers.json',
+        dataType: 'json'
+    });
 
-
-function loadScript() {
-
-//  var script = document.createElement('script');
-//  script.type = 'text/javascript';
-//?key=AIzaSyBT6L96hKLQd7Ld9pzbPwR7nUxrRsnySLA
-//script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
-//      '&signed_in=true&callback=initialize';
-//  document.body.appendChild(script);
-
-    initialize();
+    $.when(marker_data).done(initialize)
+                       .fail(function(xhr, status, errorThrown) {
+                                            console.log("loading " + " failed\n"+errorThrown+'\n'+status+'\n'+xhr.statusText);
+                                         });
 }
 
 </script>
   </head>
-  <body onload = "loadScript()">
+  <body onload = "onload();">
     <div id="map-canvas"></div><div id="margin"><div id="margin-content"/></div>
   </body>
 </html>

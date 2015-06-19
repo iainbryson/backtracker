@@ -14,6 +14,9 @@ Examine all posts from a WordPress blog for geographical data and generate some 
 ### Order
 
 '''
+ruby backtracker.rb --endpost 76| tee out
+
+
 ruby backtracker.rb | tee out
 ruby -r pry find_missing_gps_info.rb | tee out3
 bundler exec ruby -v generate-hierarchical-markers.rb | tee out4

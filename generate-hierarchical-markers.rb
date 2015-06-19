@@ -7,10 +7,18 @@ require 'geocoder'
 require 'dbscan'
 require 'pry'
 require 'pry-rescue'
+require 'active_support'
 
 Geocoder.configure(:units => :km)
 
 $distanceMultiplier = 1.0
+
+
+class ActiveSupport::TimeWithZone
+  def as_json(options = {})
+    strftime('%Y/%m/%d %H:%M:%S %z')
+  end
+end
 
 class Array
     def haversine_distance2(n)
@@ -154,3 +162,5 @@ Pry.rescue do
 end
 
 File.open('hierarchical_markers.js', 'w') { |file| file.write("var marker_data = "+JSON.pretty_generate(new_markers) + ";\n") }
+
+File.open('hierarchical-markers.json', 'w') { |file| file.write( new_markers.to_json ) }

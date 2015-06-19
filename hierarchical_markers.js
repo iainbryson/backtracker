@@ -1079,8 +1079,8 @@ var marker_data = [
         "cluster_no": 2,
         "day": "2015-02-04 05:27:13 -0800",
         "gps": {
-          "longitude": 115.36451007395702,
-          "latitude": -8.375004317831806
+          "longitude": 115.36451006006833,
+          "latitude": -8.375004331749157
         },
         "markers": [
           {
@@ -1222,7 +1222,9 @@ var marker_data = [
             "date_time": "2015-02-05 18:51:20 -0800",
             "gps": {
               "latitude": -8.360336111111112,
-              "longitude": 115.69793055555556
+              "longitude": 115.69793055555556,
+              "altitude": -2.5308839190628327,
+              "image_direction": 250.45045045045046
             },
             "images": [
               {
@@ -1244,8 +1246,10 @@ var marker_data = [
             "post_date": "2015-02-10 08:51:00 -0800",
             "date_time": "2015-01-27 13:13:13 -0800",
             "gps": {
-              "latitude": -8.123722083333332,
-              "longitude": 115.35142208333333
+              "latitude": -8.123721666666667,
+              "longitude": 115.35142166666667,
+              "altitude": -12.09643605870021,
+              "image_direction": null
             },
             "images": [
               {
@@ -1371,8 +1375,10 @@ var marker_data = [
             "post_date": "2015-02-11 23:45:00 -0800",
             "date_time": "2015-01-27 17:29:12 -0800",
             "gps": {
-              "latitude": -8.36826291666667,
-              "longitude": 115.13162986111114
+              "latitude": -8.368263333333333,
+              "longitude": 115.13163,
+              "altitude": 680.8,
+              "image_direction": 183.0
             },
             "images": [
               {
@@ -1508,8 +1514,10 @@ var marker_data = [
             "post_date": "2015-02-17 00:59:00 -0800",
             "date_time": "2015-02-02 16:03:07 -0800",
             "gps": {
-              "latitude": -8.414639861111112,
-              "longitude": 115.31576527777779
+              "latitude": -8.41464,
+              "longitude": 115.315765,
+              "altitude": 539.39,
+              "image_direction": 321.5
             },
             "images": [
               {
@@ -1656,7 +1664,9 @@ var marker_data = [
             "date_time": "2015-02-09 12:51:41 -0800",
             "gps": {
               "latitude": -8.368346666666666,
-              "longitude": 115.70156638888888
+              "longitude": 115.70156666666666,
+              "altitude": 11.883,
+              "image_direction": 120.0
             },
             "images": [
               {
@@ -1902,8 +1912,10 @@ var marker_data = [
             "post_date": "2015-02-21 18:02:00 -0800",
             "date_time": "2015-02-14 07:38:08 -0800",
             "gps": {
-              "latitude": -8.518030555555551,
-              "longitude": 115.26347222222222
+              "latitude": -8.518030555555555,
+              "longitude": 115.26347222222222,
+              "altitude": 140.04516129032257,
+              "image_direction": 359.8742857142857
             },
             "images": [
               {
@@ -1926,7 +1938,9 @@ var marker_data = [
             "date_time": "2015-02-11 10:13:53 -0800",
             "gps": {
               "latitude": -8.412451666666668,
-              "longitude": 115.58675819444446
+              "longitude": 115.58675833333334,
+              "altitude": 307.98,
+              "image_direction": 275.75
             },
             "images": [
               {
@@ -2000,7 +2014,7 @@ var marker_data = [
         "day": "2015-02-22 07:26:07 -0800",
         "gps": {
           "longitude": 104.02677829267134,
-          "latitude": 12.370323963487882
+          "latitude": 12.370323963487886
         },
         "markers": [
           {
@@ -2009,8 +2023,10 @@ var marker_data = [
             "post_date": "2015-02-19 23:22:00 -0800",
             "date_time": "2015-02-16 18:30:46 -0800",
             "gps": {
-              "latitude": 13.355030555555558,
-              "longitude": 103.85758333333332
+              "latitude": 13.355030555555556,
+              "longitude": 103.85758333333332,
+              "altitude": 65.2511013215859,
+              "image_direction": 37.51377952755905
             },
             "images": [
               {
@@ -2493,8 +2509,10 @@ var marker_data = [
             "post_date": "2015-03-03 16:29:00 -0800",
             "date_time": "2015-02-16 18:56:36 -0800",
             "gps": {
-              "latitude": 13.355019444444446,
-              "longitude": 103.85503333333334
+              "latitude": 13.355019444444444,
+              "longitude": 103.85503333333334,
+              "altitude": -13.026306039273805,
+              "image_direction": 80.41240875912409
             },
             "images": [
               {
@@ -2616,8 +2634,10 @@ var marker_data = [
             "post_date": "2015-03-08 23:20:00 -0700",
             "date_time": "2015-03-03 16:54:09 -0800",
             "gps": {
-              "latitude": 11.562127777777777,
-              "longitude": 104.91285000000002
+              "latitude": 11.562127777777778,
+              "longitude": 104.91285,
+              "altitude": 80.20215053763441,
+              "image_direction": 70.928125
             },
             "images": [
               {
@@ -2639,8 +2659,10 @@ var marker_data = [
             "post_date": "2015-03-21 23:02:00 -0700",
             "date_time": "2015-03-03 16:52:03 -0800",
             "gps": {
-              "latitude": 11.550330555555563,
-              "longitude": 104.92147777777778
+              "latitude": 11.550330555555556,
+              "longitude": 104.92147777777778,
+              "altitude": 9.731454005934719,
+              "image_direction": 157.79005524861878
             },
             "images": [
               {
@@ -2682,8 +2704,10 @@ var marker_data = [
         "cluster_no": -1,
         "day": "2015-03-24 20:57:07 -0700",
         "gps": {
-          "latitude": 47.681841666666664,
-          "longitude": -122.38303333333333
+          "latitude": 47.68184166666667,
+          "longitude": -122.38303333333333,
+          "altitude": 61.246085011185684,
+          "image_direction": 84.72311827956989
         },
         "markers": [
           {
@@ -2692,8 +2716,10 @@ var marker_data = [
             "post_date": "2015-03-23 16:02:00 -0700",
             "date_time": "2015-03-24 20:57:07 -0700",
             "gps": {
-              "latitude": 47.681841666666664,
-              "longitude": -122.38303333333333
+              "latitude": 47.68184166666667,
+              "longitude": -122.38303333333333,
+              "altitude": 61.246085011185684,
+              "image_direction": 84.72311827956989
             },
             "images": [
               {
@@ -2730,7 +2756,9 @@ var marker_data = [
             "date_time": "2015-04-19 16:26:53 -0700",
             "gps": {
               "latitude": 36.36855,
-              "longitude": -121.59004166666668
+              "longitude": -121.59004166666668,
+              "altitude": 539.4567307692307,
+              "image_direction": 307.45108695652175
             },
             "images": [
               {
@@ -3952,8 +3980,8 @@ var marker_data = [
         "cluster_no": 6,
         "day": "2015-02-04 05:27:13 -0800",
         "gps": {
-          "longitude": 115.36451007395702,
-          "latitude": -8.375004317831806
+          "longitude": 115.36451006006833,
+          "latitude": -8.375004331749155
         },
         "markers": [
           {
@@ -4095,7 +4123,9 @@ var marker_data = [
             "date_time": "2015-02-05 18:51:20 -0800",
             "gps": {
               "latitude": -8.360336111111112,
-              "longitude": 115.69793055555556
+              "longitude": 115.69793055555556,
+              "altitude": -2.5308839190628327,
+              "image_direction": 250.45045045045046
             },
             "images": [
               {
@@ -4117,8 +4147,10 @@ var marker_data = [
             "post_date": "2015-02-10 08:51:00 -0800",
             "date_time": "2015-01-27 13:13:13 -0800",
             "gps": {
-              "latitude": -8.123722083333332,
-              "longitude": 115.35142208333333
+              "latitude": -8.123721666666667,
+              "longitude": 115.35142166666667,
+              "altitude": -12.09643605870021,
+              "image_direction": null
             },
             "images": [
               {
@@ -4244,8 +4276,10 @@ var marker_data = [
             "post_date": "2015-02-11 23:45:00 -0800",
             "date_time": "2015-01-27 17:29:12 -0800",
             "gps": {
-              "latitude": -8.36826291666667,
-              "longitude": 115.13162986111114
+              "latitude": -8.368263333333333,
+              "longitude": 115.13163,
+              "altitude": 680.8,
+              "image_direction": 183.0
             },
             "images": [
               {
@@ -4381,8 +4415,10 @@ var marker_data = [
             "post_date": "2015-02-17 00:59:00 -0800",
             "date_time": "2015-02-02 16:03:07 -0800",
             "gps": {
-              "latitude": -8.414639861111112,
-              "longitude": 115.31576527777779
+              "latitude": -8.41464,
+              "longitude": 115.315765,
+              "altitude": 539.39,
+              "image_direction": 321.5
             },
             "images": [
               {
@@ -4528,8 +4564,10 @@ var marker_data = [
             "post_date": "2015-02-21 18:02:00 -0800",
             "date_time": "2015-02-14 07:38:08 -0800",
             "gps": {
-              "latitude": -8.518030555555551,
-              "longitude": 115.26347222222222
+              "latitude": -8.518030555555555,
+              "longitude": 115.26347222222222,
+              "altitude": 140.04516129032257,
+              "image_direction": 359.8742857142857
             },
             "images": [
               {
@@ -4552,7 +4590,9 @@ var marker_data = [
             "date_time": "2015-02-11 10:13:53 -0800",
             "gps": {
               "latitude": -8.412451666666668,
-              "longitude": 115.58675819444446
+              "longitude": 115.58675833333334,
+              "altitude": 307.98,
+              "image_direction": 275.75
             },
             "images": [
               {
@@ -4622,7 +4662,9 @@ var marker_data = [
             "date_time": "2015-02-09 12:51:41 -0800",
             "gps": {
               "latitude": -8.368346666666666,
-              "longitude": 115.70156638888888
+              "longitude": 115.70156666666666,
+              "altitude": 11.883,
+              "image_direction": 120.0
             },
             "images": [
               {
@@ -4882,8 +4924,10 @@ var marker_data = [
             "post_date": "2015-02-19 23:22:00 -0800",
             "date_time": "2015-02-16 18:30:46 -0800",
             "gps": {
-              "latitude": 13.355030555555558,
-              "longitude": 103.85758333333332
+              "latitude": 13.355030555555556,
+              "longitude": 103.85758333333332,
+              "altitude": 65.2511013215859,
+              "image_direction": 37.51377952755905
             },
             "images": [
               {
@@ -5366,8 +5410,10 @@ var marker_data = [
             "post_date": "2015-03-03 16:29:00 -0800",
             "date_time": "2015-02-16 18:56:36 -0800",
             "gps": {
-              "latitude": 13.355019444444446,
-              "longitude": 103.85503333333334
+              "latitude": 13.355019444444444,
+              "longitude": 103.85503333333334,
+              "altitude": -13.026306039273805,
+              "image_direction": 80.41240875912409
             },
             "images": [
               {
@@ -5508,7 +5554,7 @@ var marker_data = [
         "day": "2015-03-03 16:53:06 -0800",
         "gps": {
           "longitude": 104.91716397969923,
-          "latitude": 11.556229198540628
+          "latitude": 11.556229198540626
         },
         "markers": [
           {
@@ -5517,8 +5563,10 @@ var marker_data = [
             "post_date": "2015-03-08 23:20:00 -0700",
             "date_time": "2015-03-03 16:54:09 -0800",
             "gps": {
-              "latitude": 11.562127777777777,
-              "longitude": 104.91285000000002
+              "latitude": 11.562127777777778,
+              "longitude": 104.91285,
+              "altitude": 80.20215053763441,
+              "image_direction": 70.928125
             },
             "images": [
               {
@@ -5540,8 +5588,10 @@ var marker_data = [
             "post_date": "2015-03-21 23:02:00 -0700",
             "date_time": "2015-03-03 16:52:03 -0800",
             "gps": {
-              "latitude": 11.550330555555563,
-              "longitude": 104.92147777777778
+              "latitude": 11.550330555555556,
+              "longitude": 104.92147777777778,
+              "altitude": 9.731454005934719,
+              "image_direction": 157.79005524861878
             },
             "images": [
               {
@@ -5583,8 +5633,10 @@ var marker_data = [
         "cluster_no": -1,
         "day": "2015-03-24 20:57:07 -0700",
         "gps": {
-          "latitude": 47.681841666666664,
-          "longitude": -122.38303333333333
+          "latitude": 47.68184166666667,
+          "longitude": -122.38303333333333,
+          "altitude": 61.246085011185684,
+          "image_direction": 84.72311827956989
         },
         "markers": [
           {
@@ -5593,8 +5645,10 @@ var marker_data = [
             "post_date": "2015-03-23 16:02:00 -0700",
             "date_time": "2015-03-24 20:57:07 -0700",
             "gps": {
-              "latitude": 47.681841666666664,
-              "longitude": -122.38303333333333
+              "latitude": 47.68184166666667,
+              "longitude": -122.38303333333333,
+              "altitude": 61.246085011185684,
+              "image_direction": 84.72311827956989
             },
             "images": [
               {
@@ -5631,7 +5685,9 @@ var marker_data = [
             "date_time": "2015-04-19 16:26:53 -0700",
             "gps": {
               "latitude": 36.36855,
-              "longitude": -121.59004166666668
+              "longitude": -121.59004166666668,
+              "altitude": 539.4567307692307,
+              "image_direction": 307.45108695652175
             },
             "images": [
               {
@@ -7365,8 +7421,10 @@ var marker_data = [
         "cluster_no": -1,
         "day": "2015-01-27 13:13:13 -0800",
         "gps": {
-          "latitude": -8.123722083333332,
-          "longitude": 115.35142208333333
+          "latitude": -8.123721666666667,
+          "longitude": 115.35142166666667,
+          "altitude": -12.09643605870021,
+          "image_direction": null
         },
         "markers": [
           {
@@ -7375,8 +7433,10 @@ var marker_data = [
             "post_date": "2015-02-10 08:51:00 -0800",
             "date_time": "2015-01-27 13:13:13 -0800",
             "gps": {
-              "latitude": -8.123722083333332,
-              "longitude": 115.35142208333333
+              "latitude": -8.123721666666667,
+              "longitude": 115.35142166666667,
+              "altitude": -12.09643605870021,
+              "image_direction": null
             },
             "images": [
               {
@@ -7506,8 +7566,10 @@ var marker_data = [
         "cluster_no": -1,
         "day": "2015-01-27 17:29:12 -0800",
         "gps": {
-          "latitude": -8.36826291666667,
-          "longitude": 115.13162986111114
+          "latitude": -8.368263333333333,
+          "longitude": 115.13163,
+          "altitude": 680.8,
+          "image_direction": 183.0
         },
         "markers": [
           {
@@ -7516,8 +7578,10 @@ var marker_data = [
             "post_date": "2015-02-11 23:45:00 -0800",
             "date_time": "2015-01-27 17:29:12 -0800",
             "gps": {
-              "latitude": -8.36826291666667,
-              "longitude": 115.13162986111114
+              "latitude": -8.368263333333333,
+              "longitude": 115.13163,
+              "altitude": 680.8,
+              "image_direction": 183.0
             },
             "images": [
               {
@@ -7657,8 +7721,10 @@ var marker_data = [
         "cluster_no": -1,
         "day": "2015-02-02 16:03:07 -0800",
         "gps": {
-          "latitude": -8.414639861111112,
-          "longitude": 115.31576527777779
+          "latitude": -8.41464,
+          "longitude": 115.315765,
+          "altitude": 539.39,
+          "image_direction": 321.5
         },
         "markers": [
           {
@@ -7667,8 +7733,10 @@ var marker_data = [
             "post_date": "2015-02-17 00:59:00 -0800",
             "date_time": "2015-02-02 16:03:07 -0800",
             "gps": {
-              "latitude": -8.414639861111112,
-              "longitude": 115.31576527777779
+              "latitude": -8.41464,
+              "longitude": 115.315765,
+              "altitude": 539.39,
+              "image_direction": 321.5
             },
             "images": [
               {
@@ -7747,7 +7815,9 @@ var marker_data = [
         "day": "2015-02-05 18:51:20 -0800",
         "gps": {
           "latitude": -8.360336111111112,
-          "longitude": 115.69793055555556
+          "longitude": 115.69793055555556,
+          "altitude": -2.5308839190628327,
+          "image_direction": 250.45045045045046
         },
         "markers": [
           {
@@ -7757,7 +7827,9 @@ var marker_data = [
             "date_time": "2015-02-05 18:51:20 -0800",
             "gps": {
               "latitude": -8.360336111111112,
-              "longitude": 115.69793055555556
+              "longitude": 115.69793055555556,
+              "altitude": -2.5308839190628327,
+              "image_direction": 250.45045045045046
             },
             "images": [
               {
@@ -7784,7 +7856,9 @@ var marker_data = [
         "day": "2015-02-09 12:51:41 -0800",
         "gps": {
           "latitude": -8.368346666666666,
-          "longitude": 115.70156638888888
+          "longitude": 115.70156666666666,
+          "altitude": 11.883,
+          "image_direction": 120.0
         },
         "markers": [
           {
@@ -7794,7 +7868,9 @@ var marker_data = [
             "date_time": "2015-02-09 12:51:41 -0800",
             "gps": {
               "latitude": -8.368346666666666,
-              "longitude": 115.70156638888888
+              "longitude": 115.70156666666666,
+              "altitude": 11.883,
+              "image_direction": 120.0
             },
             "images": [
               {
@@ -8045,7 +8121,9 @@ var marker_data = [
         "day": "2015-02-11 10:13:53 -0800",
         "gps": {
           "latitude": -8.412451666666668,
-          "longitude": 115.58675819444446
+          "longitude": 115.58675833333334,
+          "altitude": 307.98,
+          "image_direction": 275.75
         },
         "markers": [
           {
@@ -8055,7 +8133,9 @@ var marker_data = [
             "date_time": "2015-02-11 10:13:53 -0800",
             "gps": {
               "latitude": -8.412451666666668,
-              "longitude": 115.58675819444446
+              "longitude": 115.58675833333334,
+              "altitude": 307.98,
+              "image_direction": 275.75
             },
             "images": [
               {
@@ -8214,8 +8294,10 @@ var marker_data = [
         "cluster_no": -1,
         "day": "2015-02-14 07:38:08 -0800",
         "gps": {
-          "latitude": -8.518030555555551,
-          "longitude": 115.26347222222222
+          "latitude": -8.518030555555555,
+          "longitude": 115.26347222222222,
+          "altitude": 140.04516129032257,
+          "image_direction": 359.8742857142857
         },
         "markers": [
           {
@@ -8224,8 +8306,10 @@ var marker_data = [
             "post_date": "2015-02-21 18:02:00 -0800",
             "date_time": "2015-02-14 07:38:08 -0800",
             "gps": {
-              "latitude": -8.518030555555551,
-              "longitude": 115.26347222222222
+              "latitude": -8.518030555555555,
+              "longitude": 115.26347222222222,
+              "altitude": 140.04516129032257,
+              "image_direction": 359.8742857142857
             },
             "images": [
               {
@@ -8251,8 +8335,10 @@ var marker_data = [
         "cluster_no": -1,
         "day": "2015-02-16 18:30:46 -0800",
         "gps": {
-          "latitude": 13.355030555555558,
-          "longitude": 103.85758333333332
+          "latitude": 13.355030555555556,
+          "longitude": 103.85758333333332,
+          "altitude": 65.2511013215859,
+          "image_direction": 37.51377952755905
         },
         "markers": [
           {
@@ -8261,8 +8347,10 @@ var marker_data = [
             "post_date": "2015-02-19 23:22:00 -0800",
             "date_time": "2015-02-16 18:30:46 -0800",
             "gps": {
-              "latitude": 13.355030555555558,
-              "longitude": 103.85758333333332
+              "latitude": 13.355030555555556,
+              "longitude": 103.85758333333332,
+              "altitude": 65.2511013215859,
+              "image_direction": 37.51377952755905
             },
             "images": [
               {
@@ -8288,8 +8376,10 @@ var marker_data = [
         "cluster_no": -1,
         "day": "2015-02-16 18:56:36 -0800",
         "gps": {
-          "latitude": 13.355019444444446,
-          "longitude": 103.85503333333334
+          "latitude": 13.355019444444444,
+          "longitude": 103.85503333333334,
+          "altitude": -13.026306039273805,
+          "image_direction": 80.41240875912409
         },
         "markers": [
           {
@@ -8298,8 +8388,10 @@ var marker_data = [
             "post_date": "2015-03-03 16:29:00 -0800",
             "date_time": "2015-02-16 18:56:36 -0800",
             "gps": {
-              "latitude": 13.355019444444446,
-              "longitude": 103.85503333333334
+              "latitude": 13.355019444444444,
+              "longitude": 103.85503333333334,
+              "altitude": -13.026306039273805,
+              "image_direction": 80.41240875912409
             },
             "images": [
               {
@@ -8956,8 +9048,10 @@ var marker_data = [
         "cluster_no": -1,
         "day": "2015-03-03 16:52:03 -0800",
         "gps": {
-          "latitude": 11.550330555555563,
-          "longitude": 104.92147777777778
+          "latitude": 11.550330555555556,
+          "longitude": 104.92147777777778,
+          "altitude": 9.731454005934719,
+          "image_direction": 157.79005524861878
         },
         "markers": [
           {
@@ -8966,8 +9060,10 @@ var marker_data = [
             "post_date": "2015-03-21 23:02:00 -0700",
             "date_time": "2015-03-03 16:52:03 -0800",
             "gps": {
-              "latitude": 11.550330555555563,
-              "longitude": 104.92147777777778
+              "latitude": 11.550330555555556,
+              "longitude": 104.92147777777778,
+              "altitude": 9.731454005934719,
+              "image_direction": 157.79005524861878
             },
             "images": [
               {
@@ -9009,8 +9105,10 @@ var marker_data = [
         "cluster_no": -1,
         "day": "2015-03-03 16:54:09 -0800",
         "gps": {
-          "latitude": 11.562127777777777,
-          "longitude": 104.91285000000002
+          "latitude": 11.562127777777778,
+          "longitude": 104.91285,
+          "altitude": 80.20215053763441,
+          "image_direction": 70.928125
         },
         "markers": [
           {
@@ -9019,8 +9117,10 @@ var marker_data = [
             "post_date": "2015-03-08 23:20:00 -0700",
             "date_time": "2015-03-03 16:54:09 -0800",
             "gps": {
-              "latitude": 11.562127777777777,
-              "longitude": 104.91285000000002
+              "latitude": 11.562127777777778,
+              "longitude": 104.91285,
+              "altitude": 80.20215053763441,
+              "image_direction": 70.928125
             },
             "images": [
               {
@@ -9046,8 +9146,10 @@ var marker_data = [
         "cluster_no": -1,
         "day": "2015-03-24 20:57:07 -0700",
         "gps": {
-          "latitude": 47.681841666666664,
-          "longitude": -122.38303333333333
+          "latitude": 47.68184166666667,
+          "longitude": -122.38303333333333,
+          "altitude": 61.246085011185684,
+          "image_direction": 84.72311827956989
         },
         "markers": [
           {
@@ -9056,8 +9158,10 @@ var marker_data = [
             "post_date": "2015-03-23 16:02:00 -0700",
             "date_time": "2015-03-24 20:57:07 -0700",
             "gps": {
-              "latitude": 47.681841666666664,
-              "longitude": -122.38303333333333
+              "latitude": 47.68184166666667,
+              "longitude": -122.38303333333333,
+              "altitude": 61.246085011185684,
+              "image_direction": 84.72311827956989
             },
             "images": [
               {
@@ -9084,7 +9188,9 @@ var marker_data = [
         "day": "2015-04-19 16:26:53 -0700",
         "gps": {
           "latitude": 36.36855,
-          "longitude": -121.59004166666668
+          "longitude": -121.59004166666668,
+          "altitude": 539.4567307692307,
+          "image_direction": 307.45108695652175
         },
         "markers": [
           {
@@ -9094,7 +9200,9 @@ var marker_data = [
             "date_time": "2015-04-19 16:26:53 -0700",
             "gps": {
               "latitude": 36.36855,
-              "longitude": -121.59004166666668
+              "longitude": -121.59004166666668,
+              "altitude": 539.4567307692307,
+              "image_direction": 307.45108695652175
             },
             "images": [
               {
