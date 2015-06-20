@@ -14,12 +14,17 @@ Examine all posts from a WordPress blog for geographical data and generate some 
 ### Order
 
 '''
-ruby backtracker.rb --endpost 76| tee out
-
+ruby backtracker.rb | tee out
 
 ruby backtracker.rb | tee out
 ruby -r pry find_missing_gps_info.rb | tee out3
-bundler exec ruby -v generate-hierarchical-markers.rb | tee out4
+bundler exec ruby -v generate-hierarchical-markers.rb  --startdate "2015-04-15" | tee out4
+cp hierarchical-markers.json hierarchical-markers-na.json
+
+ruby backtracker.rb | tee out
+ruby -r pry find_missing_gps_info.rb | tee out3
+bundler exec ruby -v generate-hierarchical-markers.rb --enddate "2015-04-15" | tee out4
+cp hierarchical-markers.json hierarchical-markers-sea.json
 '''
 
 [phash]:

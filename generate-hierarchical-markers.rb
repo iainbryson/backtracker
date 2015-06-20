@@ -9,10 +9,20 @@ require 'pry'
 require 'pry-rescue'
 require 'active_support'
 
+require 'optparse'
+require 'yaml'
+
 Geocoder.configure(:units => :km)
 
 $distanceMultiplier = 1.0
 
+options = { start_post: Time.parse('2010-1-1'), end_post: Time.parse('2020-12-31') }
+OptionParser.new do |opts|
+  opts.banner = "Usage: example.rb [options]"
+
+  opts.on('-start', '--startdate DATE', 'Starting post date') { |v| options[:start_post] = Time.parse(v) }
+  opts.on('-end', '--enddate DATE', 'Ending post date') { |v| options[:end_post] = Time.parse(v) }
+end.parse!
 
 class ActiveSupport::TimeWithZone
   def as_json(options = {})
@@ -56,6 +66,9 @@ markers_with_gps = markers.select{ |m| m.has_key?('gps') && m['gps']  && m['date
 markers_with_gps.each do |m|
     m['date_time'] = Time.parse(m['date_time'])
 end
+
+markers_with_gps.select!{ |m| (m['date_time'] >= options[:start_post]) &&
+                              (m['date_time'] <= options[:end_post]) }
 
 min_date = markers_with_gps.map{|m| m['date_time']}.min
 

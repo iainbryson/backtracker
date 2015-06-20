@@ -7,40 +7,26 @@ require 'exifr'
 require 'json'
 require 'pp'
 require './wordpress_creds.rb'
-require 'optparse'
-require 'yaml'
-
-options = { start_post:0, end_post:-1 }
-OptionParser.new do |opts|
-  opts.banner = "Usage: example.rb [options]"
-
-  opts.on('-start', '--startpost NUMBER', 'Starting post number') { |v| options[:start_post] = v.to_i }
-  opts.on('-end', '--endpost NUMBER', 'Ending post number') { |v| options[:end_post] = v.to_i }
-end.parse!
 
 wp = Rubypress::Client.new(WPCreds::wordpress_creds)
 
-start = options[:start_post]
+start = 0
 step = 10
 
 markers = []
 
 exif = nil
 
-while options[:end_post] < 0 || start <= options[:end_post] do
-
-    step = (start + step > options[:end_post] ? options[:end_post]-start : step) if options[:end_post] > 0;
-
-    print "start #{start} step #{step} end #{options[:end_post]}]\n"
+while true do
 
     posts = wp.getPosts( {
               :filter => {
-                  :post_type => 'post',
+                  :post_type   => 'post',
                   :post_status => 'publish',
-                  :orderby => 'post_date',
-                  :order => 'asc',
-                  :offset => start,
-                  :number => step
+                  :orderby     => 'date',
+                  :order       => 'asc',
+                  :offset      => start,
+                  :number      => step
             } } )
 
     start = start + step
